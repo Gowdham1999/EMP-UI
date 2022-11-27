@@ -1,0 +1,24 @@
+.example-spacer {
+   flex: 1 1 auto;
+}
+
+.example-form {
+   min-width: 80px;
+   max-width: 350px;
+}
+
+.page {
+   height: 100vh
+}
+
+.home {
+   display: grid;
+   place-items: center;
+   margin-top: 40vh;
+}
+
+h1 {
+   font-weight: 600;
+   font-size: 3rem !important;
+   color: #673AB7;
+}

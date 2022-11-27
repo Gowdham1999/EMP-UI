@@ -1,0 +1,40 @@
+<div class="page">
+
+   <mat-toolbar color="primary">
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Menu" class="example-icon">
+         <mat-icon>menu</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu" yPosition="below">
+
+         <button mat-menu-item (click)="toDetails()">Employee Details</button>
+
+      </mat-menu>
+
+      <span style="font-size: 1.5rem;">Employee Management Portal</span>
+
+      <span class="example-spacer"></span>
+
+      <span style="margin-right:2rem;">Welcome <strong style="font-size: 1.6rem;">{{this.userName}}</strong></span>
+
+      <button mat-icon-button matTooltip="Home" class="example-icon" routerLink="/home" *ngIf="!homePageUrl"
+         (click)="homePageUrl= true">
+         <mat-icon>home</mat-icon>
+      </button>
+
+      <button mat-icon-button matTooltip="Logout" class="example-icon" (click)="logout()">
+         <mat-icon>logout</mat-icon>
+      </button>
+
+   </mat-toolbar>
+
+   <div class="home" *ngIf="homePageUrl">
+      <h1>
+         Welcome to Employee Management Portal
+      </h1>
+   </div>
+
+   <router-outlet></router-outlet>
+
+</div>

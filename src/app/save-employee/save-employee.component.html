@@ -1,0 +1,42 @@
+<div class="form-field">
+
+   <form [formGroup]="saveEmployeeForm" (ngSubmit)="onSubmit()">
+
+      <mat-form-field appearance="standard" style="display: none">
+         <mat-label>ID</mat-label>
+         <input matInput formControlName="id">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard">
+         <mat-label>Employee ID</mat-label>
+         <input matInput formControlName="empID">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard">
+         <mat-label>Name</mat-label>
+         <input matInput formControlName="empName">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard">
+         <mat-label>Email ID</mat-label>
+         <input matInput formControlName="empEmail" type="email"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard">
+         <mat-label>Company Name</mat-label>
+         <input matInput formControlName="companyName">
+      </mat-form-field>
+
+      <div style="display:flex; justify-content:space-between; align-items: flex-start  ">
+
+         <button mat-raised-button type="submit" [disabled]="saveEmployeeForm.invalid"
+            color="primary">{{buttonName}}</button>
+
+         <button mat-raised-button type="button" color="primary" routerLink="/home/employees">Back to Details</button>
+
+      </div>
+
+   </form>
+
+</div>

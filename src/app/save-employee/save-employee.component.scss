@@ -1,0 +1,11 @@
+.form-field {
+   margin: 30px 20vh;
+   padding: 30px;
+   display: flow-root;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+mat-form-field {
+   width: 100%
+}

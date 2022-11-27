@@ -1,0 +1,37 @@
+
+.example-full-width {
+   width: 100%;
+}
+
+.login-card-div {
+   background-color: rgb(215, 215, 215);
+   height: 91vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.login-card {
+   min-height: auto;
+   -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.46);
+   -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.46);
+   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.46);
+}
+
+.example-spacer {
+   flex: 1 1 auto;
+}
+
+.example-form {
+   min-width: 80px;
+   max-width: 350px;
+}
+
+
+mat-form-field {
+   margin: 15px 0;
+}
+
+.mat-card-actions {
+   margin-top: 50px
+}

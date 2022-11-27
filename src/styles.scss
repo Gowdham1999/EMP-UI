@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config($font-family: 'Poppins'
+   );
+@include mat-core($custom-typography);
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   font-size: medium;
+   font-weight: 400;
+}
